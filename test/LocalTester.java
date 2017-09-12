@@ -10,7 +10,7 @@ import java.util.Collection;
 public class LocalTester {
 
     private static void buildCatalog() {
-        CourseCatalog cm = CourseManager.getCourseManager();
+        CourseCatalog cm = CourseManager.getInstance();
         System.out.println("Building course catalog");
         try {
             // replace up to catch to add courses you are taking this term
@@ -41,7 +41,7 @@ public class LocalTester {
 
     public static void main(String[] args) {
         buildCatalog();
-        CourseCatalog cc = CourseManager.getCourseManager();
+        CourseCatalog cc = CourseManager.getInstance();
         System.out.println();
         System.out.println("Testing getting a course by code");
         try {

@@ -17,7 +17,7 @@ public class CourseManager implements CourseCatalog {
     private CourseManager() {
     }
 
-    public static CourseManager getCourseManager() {
+    public static CourseManager getInstance() {
         return courseManager;
     }
 
